@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 10px solid #ffff00;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock h4 {
+    position: absolute;
+    font-size: 1.2em;
+    color: #000;
+    top: 93px;
+    font-weight: bold;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+    z-index: 100;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+}
+
+.clock .hour,
+.hr {
+    width: 180px;
+    height: 180px;
+}
+
+.clock .min,
+.min {
+    width: 210px;
+    height: 210px;
+}
+
+.clock .sec,
+.sec {
+    width: 220px;
+    height: 220px;
+}
+
+.hr,
+.min,
+.sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 80px;
+    background: #000;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: #333;
+    border-radius: 6px;
+    z-index: 11;
+}
+
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background: red;
+    border-radius: 6px;
+    z-index: 12;
+}
+
+
+.clock-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.num {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Clock Numbers Positioning */
+.num1  { top: 40px; left: 260px; }
+.num2  { top: 95px; left: 310px; }
+.num3  { top: 180px; left: 330px; }
+.num4  { top: 260px; left: 310px; }
+.num5  { top: 315px; left: 260px; }
+.num6  { top: 340px; left: 178px; }
+.num7  { top: 315px; left: 95px; }
+.num8  { top: 260px; left: 40px; }
+.num9  { top: 180px; left: 20px; }
+.num10 { top: 95px; left: 40px; }
+.num11 { top: 40px; left: 95px; }
+.num12 { top: 10px; left: 178px; }
